@@ -42,11 +42,15 @@ CREATE EXTERNAL XXX engine = +://xxx.xxx.xxx.xxx:1234’;
 
 当某个 sql 需要同时访问 tidb 的表和外部时，tidb 同样会将该请求下推到 flink 执行，在 [TiBigData](https://github.com/tidb-incubator/TiBigData) 项目中已经实现了 flink 从 TiKV 中直接读取 tidb 的数据，因此 flink 有能力来做 tidb 表和外部的关联查询。
 
+详细的设计思路可以参考[Batch 实现思路](./Batch 实现思路.md)。
+
 此外利用上述功能，我们可以让 TiDB 拥有物化视图的能力，架构图如下。
 
 ![](images/arc2.png)
 
 当用户通过 tidb 创建一个物化视图后，首先利用flink来做一次全量数据的计算，并把数据写回到 tidb，然后再启动一个 flink streaming 任务，在处理增量数据，并且把数据更新到 tidb。
+
+详细的设计思路可以参考[物化视图实现思路](./物化视图实现思路.md)。
 
 ## Rationale
 
