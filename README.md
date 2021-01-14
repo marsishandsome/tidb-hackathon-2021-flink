@@ -7,5 +7,7 @@
 - https://github.com/Coderlxl/hackson-sql-tool
 
 # Misc
+- java: 8
 - flink: 1.12
 - Hive: 2.1.1
+- hadoop: 2.10.1
