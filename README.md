@@ -8,3 +8,4 @@
 
 # Misc
 - flink: 1.12
+- Hive: 2.1.1
