@@ -5,6 +5,7 @@
 - https://github.com/marsishandsome/client-java/tree/hackathon2021
 - https://github.com/marsishandsome/TiBigData/tree/hackathon2021
 - https://github.com/Coderlxl/hackson-sql-tool
+- https://github.com/lzmhhh123/tidb
 
 # Misc
 - java: 8
