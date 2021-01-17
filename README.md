@@ -7,6 +7,7 @@
 - https://github.com/Coderlxl/hackson-sql-tool
 - https://github.com/Coderlxl/ProxyServer
 - https://github.com/lzmhhh123/tidb
+- https://github.com/liuzix/TiBigData/tree/zixiong
 
 # Misc
 - java: 8
